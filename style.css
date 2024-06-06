@@ -309,7 +309,6 @@ section {
     align-items: center;
     color: white;
     text-decoration: none;
-    margin-right: 10px;
 }
 #experience ul b:hover{
     text-decoration: underline;
@@ -317,12 +316,18 @@ section {
 #experience .ex-main-ul ul li{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
 }
 .ex-main-ul ul li span{
     color: gray;
 }
 .ex-main-ul ul li label{
     color: #4a90e2;
+}
+.h3-2{
+    margin-top: 40px;
 }
 .ex-container{
     display: flex;
@@ -453,7 +458,7 @@ section {
 .progress-circle svg {
     position: absolute;
     top: 0;
-    left: 0;
+    left:0;
     transform: rotate(-90deg);
 }
 
@@ -654,6 +659,9 @@ footer a:hover{
     .navbar .toggle-button.active .bar:nth-child(3) {
         transform: translateY(-9px) rotate(-45deg);
         background-color: #9b59b6;
+    }
+    #experience{
+        padding: 5px;
     }
        
 }
