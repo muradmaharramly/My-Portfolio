@@ -657,12 +657,12 @@ footer a:hover{
     }
 
     .navbar .toggle-button.active .bar:nth-child(3) {
-        transform: translateY(-9px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-46deg);
         background-color: #9b59b6;
-        -webkit-transform: translateY(-9px) rotate(-45deg);
-        -moz-transform: translateY(-9px) rotate(-45deg);
-        -ms-transform: translateY(-9px) rotate(-45deg);
-        -o-transform: translateY(-9px) rotate(-45deg);
+        -webkit-transform: translateY(-8px) rotate(-46deg);
+        -moz-transform: translateY(-8px) rotate(-46deg);
+        -ms-transform: translateY(-8px) rotate(-46deg);
+        -o-transform: translateY(-8px) rotate(-46deg);
 }
     #experience{
         padding: 5px;
