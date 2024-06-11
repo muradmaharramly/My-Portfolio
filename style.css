@@ -167,7 +167,7 @@ section {
     display: flex;
     justify-content: center;
     max-width: 450px;
-    margin: 40px auto 0px auto;
+    margin: 20px auto 0px auto;
 }
 
 .profile-text {
@@ -640,11 +640,11 @@ footer a:hover{
     .profile-container {
         flex-direction: column;
         text-align: center;
-        margin-top: 60px;
+        margin-top: 20px;
     }
 
     .profile-photo-wrapper {
-        margin: 0 0 20px 0;
+        margin: 0 0 5px 0;
     }
 
     .navbar .toggle-button.active .bar:nth-child(2) {
