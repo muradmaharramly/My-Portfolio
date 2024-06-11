@@ -605,7 +605,7 @@ footer a:hover{
         display: none;
     }
     .navbar {
-        width: 89%;
+        width: 92%;
         padding: 2px 8px;
 }
 
@@ -629,7 +629,7 @@ footer a:hover{
     .toggle-button {
         display: flex;
         position: absolute;
-        top: 20px;
+        top: 12px;
         right: 20px;
     }
 
