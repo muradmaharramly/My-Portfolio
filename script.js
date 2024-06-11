@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const targetSection = document.getElementById(targetId);
             const elementPosition = targetSection.getBoundingClientRect().top + window.pageYOffset;
             window.scroll({
-                top: elementPosition - 60,
+                top: elementPosition - 70,
                 behavior: "smooth"
             });
             toggleMenu(); // Close the navbar if open
