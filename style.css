@@ -668,6 +668,9 @@ footer a:hover{
     #experience{
         padding: 5px;
     }
+    #experience .ex-main-ul li{
+        margin-left: -10px;
+    }
        
 }
 @media (width: 768px) {
