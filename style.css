@@ -227,7 +227,7 @@ section {
     align-items: center;
     margin: 20px auto;
     text-align: justify;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Arial, sans-serif;
+    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif, Arial, sans-serif;
 }
 .about-text a{
     color: #4a90e2;
@@ -600,6 +600,7 @@ footer a:hover{
 .back-to-top i {
     font-size: 20px;
 }
+/*RESPONSIVE DESIGN*/
 @media (max-width: 768px) {
     .logo-text h3{
         display: none;
@@ -629,7 +630,7 @@ footer a:hover{
     .toggle-button {
         display: flex;
         position: absolute;
-        top: 16px;
+        top: 18px;
         right: 20px;
     }
 
