@@ -1,20 +1,17 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Scroll smoothly to sections
+    // Add smooth scroll to navbar links
     const navLinks = document.querySelectorAll(".nav-link");
     navLinks.forEach(link => {
         link.addEventListener("click", function(event) {
             event.preventDefault();
             const targetId = this.getAttribute("href").substring(1);
             const targetSection = document.getElementById(targetId);
-            targetSection.scrollIntoView({
+            const elementPosition = targetSection.getBoundingClientRect().top + window.pageYOffset;
+            window.scroll({
+                top: elementPosition - 60,
                 behavior: "smooth"
             });
-            
-            // Close the navbar if open
-            const navbarLinks = document.querySelector('.navbar-links');
-            if (navbarLinks.classList.contains('active')) {
-                toggleMenu();
-            }
+            toggleMenu(); // Close the navbar if open
         });
     });
 
@@ -30,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Job title animation
     const jobTitle = document.getElementById('job-title');
-    const titles = [" University student.", " Digital Marketer."," Enthusiastic Frontend Dev."];
+    const titles = [" University student.", " Digital Marketer.", " Enthusiastic Frontend Dev."];
     let titleIndex = 0;
 
     function typeTitle() {
@@ -78,9 +75,8 @@ document.addEventListener("DOMContentLoaded", function() {
     sections.forEach(section => {
         observer.observe(section);
     });
-});
 
- // Show or hide the back-to-top button
+    // Show or hide the back-to-top button
     window.addEventListener('scroll', function() {
         const backToTopButton = document.querySelector('.back-to-top');
         if (window.scrollY > 300) {
@@ -98,15 +94,14 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    document.addEventListener('DOMContentLoaded', () => {
-        const progresses = document.querySelectorAll('.progress');
-    
-        progresses.forEach(progress => {
-            const width = progress.style.width;
-            progress.style.width = '0';
-            setTimeout(() => {
-                progress.style.width = width;
-            }, 500);
-        });
+    // Progress bar animation
+    const progresses = document.querySelectorAll('.progress');
+
+    progresses.forEach(progress => {
+        const width = progress.style.width;
+        progress.style.width = '0';
+        setTimeout(() => {
+            progress.style.width = width;
+        }, 500);
     });
-    
+});
