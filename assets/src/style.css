@@ -426,7 +426,7 @@ section {
     text-align: center;
     margin-top: 20px;
     padding: 20px;
-    background-color: var(--back-color-dark);
+    background-color: transparent;
     color: var(--primary-text);
     border-radius: 10px;
     width: 80%;
