@@ -86,13 +86,17 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    // Smooth scroll to the top
+    // Smooth scroll to the top with 20px offset
     document.querySelector('.back-to-top').addEventListener('click', function(e) {
         e.preventDefault();
-        document.querySelector('#home').scrollIntoView({
+        const homeSection = document.querySelector('#home');
+        const elementPosition = homeSection.getBoundingClientRect().top + window.pageYOffset;
+        window.scroll({
+            top: elementPosition - 50,
             behavior: 'smooth'
         });
     });
+
 
     // Progress bar animation
     const progresses = document.querySelectorAll('.progress');
