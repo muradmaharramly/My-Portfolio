@@ -509,6 +509,7 @@ section {
 }
 
 .level {
+    text-align: right ;
     font-style: italic;
     color: var(--secondary-text);
 }
@@ -753,6 +754,9 @@ footer a:hover{
     #experience .ex-main-ul li{
         margin-left: -10px;
     }
+    #language-skills {
+        padding: 0;
+    } 
        
 }
 @media (width: 768px) {
