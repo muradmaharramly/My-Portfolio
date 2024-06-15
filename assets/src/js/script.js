@@ -25,34 +25,6 @@ document.addEventListener("DOMContentLoaded", function() {
         toggleButton.classList.toggle('active');
     }
 
-    // Job title animation
-    const jobTitle = document.getElementById('job-title');
-    const titles = [" University student.", " Digital Marketer.", " Enthusiastic Frontend Dev."];
-    let titleIndex = 0;
-
-    function typeTitle() {
-        let title = titles[titleIndex];
-        let charIndex = 0;
-
-        function typeChar() {
-            if (charIndex < title.length) {
-                jobTitle.textContent += title.charAt(charIndex);
-                charIndex++;
-                setTimeout(typeChar, 100);
-            } else {
-                setTimeout(() => {
-                    jobTitle.textContent = '';
-                    titleIndex = (titleIndex + 1) % titles.length;
-                    typeTitle();
-                }, 1000);
-            }
-        }
-
-        typeChar();
-    }
-
-    typeTitle();
-
     // Highlight active section link in navbar
     const sections = document.querySelectorAll('section');
     const options = {
