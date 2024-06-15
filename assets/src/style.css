@@ -11,6 +11,11 @@ section {
     text-align: center;
     margin-top: 60px;
 }
+h4{
+    color: var(--secondary-text);
+    font-weight: 400;
+    line-height: 5px;
+}
 :root{
     --back-color-dark:#1a1a1a;
     --back-color-soft:#333;
