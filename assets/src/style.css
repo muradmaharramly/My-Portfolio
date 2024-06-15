@@ -257,7 +257,7 @@ section {
     background-color: var(--back-color-dark);
     transform: translateY(-1px);
     color: var(--soft-white);
-    box-shadow: 0px 0px 10px 5px var(--purple);
+    box-shadow: 0px 0px 5px 5px var(--purple);
     -webkit-transform: translateY(-1px);
     -moz-transform: translateY(-1px);
     -ms-transform: translateY(-1px);
@@ -558,7 +558,7 @@ section {
     justify-content: center;
 }
 .project {
-    background-color: var(--soft-back2);
+    background-image: radial-gradient(circle, #1a1a1a, #1c1c1c, #1e1e1e, #202020, #222222);
     margin: 10px;
     padding: 20px;
     border-radius: 15px;
