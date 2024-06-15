@@ -388,6 +388,9 @@ section {
 .ex-main-ul ul li label{
     color: var(--blue);
 }
+.ex-main-ul ul li .work-label{
+    color:var(--secondary-text);
+}
 .h3-2{
     margin-top: 40px;
 }
