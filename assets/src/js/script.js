@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const homeSection = document.querySelector('#home');
         const elementPosition = homeSection.getBoundingClientRect().top + window.pageYOffset;
         window.scroll({
-            top: elementPosition - 80,
+            top: elementPosition - 120,
             behavior: 'smooth'
         });
     });
