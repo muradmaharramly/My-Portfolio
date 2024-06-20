@@ -9,7 +9,7 @@ body {
 section {
     padding: 20px;
     text-align: center;
-    margin-top: 60px;
+   
 }
 h4{
     color: var(--secondary-text);
@@ -125,6 +125,7 @@ h4{
 /*HOME SECTION CODES*/
 #home{
     padding: 5px;
+    margin-top: 60px;
 }
 .profile-container {
     display: flex;
@@ -156,7 +157,7 @@ h4{
 
 .photo-border {
     position: absolute;
-    top: 50%;
+    top: 49%;
     left: 50%;
     width: 155px;
     height: 155px;
@@ -792,6 +793,12 @@ footer a:hover{
 @media (max-width:600px){
     .slider-container{
         width: 360px;
+    }
+    .slider {
+        display: flex;
+        width: calc(100% *4);    
+        animation: slide 10s linear infinite;
+        -webkit-animation: slide 10s linear infinite;
     }
 }
 @media (max-width:850px){
