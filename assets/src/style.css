@@ -439,6 +439,9 @@ h4{
 }
 
 /*TOOLS SLIDER CODES*/
+.tools-tech{
+    padding: 0px 20px;
+}
 .slider-container {
     text-align: center;
     width: 600px;
