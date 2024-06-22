@@ -677,7 +677,7 @@ h4{
     -o-transition: 0.3s ease;
 }
 .project a:hover{
-    background-color: var(--back-color-soft);
+    background-color: var(--back-color-dark);
     color: var(--soft-white);
     border: 2px solid var(--soft-white);
 }
