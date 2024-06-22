@@ -3,8 +3,8 @@ body {
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: white;
-    color: #ffffff;
+    background-color: var(--back-color-white);
+    color: var(--primary-text);
     transition: background-color 0.3s ease, color 0.3s ease;
     -webkit-transition: background-color 0.3s ease, color 0.3s ease;
     -moz-transition: background-color 0.3s ease, color 0.3s ease;

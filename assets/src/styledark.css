@@ -12,7 +12,7 @@ body {
     -o-transition: background-color 0.3s ease, color 0.3s ease;
 }
 :root{
-    --back-color-dark:#1a1a1a;
+    --back-color-dark:#181833;
     --back-color-soft:#333;
     --soft-back2:#222;
     --dark-back:rgb(13,13,30);
