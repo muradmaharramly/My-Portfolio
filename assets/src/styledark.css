@@ -24,19 +24,6 @@ body {
     --3rd-level-text:gray;
     --border-color:rgb(124, 124, 124);
 }
-.theme-toggle {
-    background: transparent;
-    border: none;
-    font-size: 2em;
-    padding: 0;
-    cursor: pointer;
-}
-.changer{
-    position: absolute;
-    top: -20px;
-    left: 36%;
-    z-index: 999;
-}
 
 section {
   padding: 20px;
@@ -182,6 +169,38 @@ h4{
     flex-direction: row;
     gap: 50px;
 }
+.theme-toggle {
+    background: transparent;
+    border: none;
+    font-size: 2em;
+    padding: 0;
+    cursor: pointer;
+}
+.changer{
+    position: absolute;
+    top: -20px;
+    left: 36%;
+    z-index: 999;
+}
+/*fade animation foe theme button*/
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+  
+  /*fade classes*/
+  .fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .fade-out {
+    animation: fadeOut 0.5s ease-in-out;
+  }
 
 .profile-photo-wrapper {
     position: relative;

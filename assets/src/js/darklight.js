@@ -4,28 +4,41 @@
       const themeIcon = document.getElementById('theme-icon');
       const themeStylesheet = document.getElementById('theme-stylesheet');
   
-      // Sayfa yüklendiğinde mevcut temayı localStorage'dan al
-      const currentTheme = localStorage.getItem('theme') || 'light';
+      // Set the default theme to dark
+      let currentTheme = 'dark';
   
-      // Mevcut temaya göre stil dosyasını ve ikonu ayarla
+      // Retrieve the theme from localStorage
+      const savedTheme = localStorage.getItem('theme');
+      
+      // Use the theme from localStorage if available
+      if (savedTheme) {
+        currentTheme = savedTheme;
+      }
+  
+      // Set the stylesheet and icon according to the current theme
       if (currentTheme === 'dark') {
         themeStylesheet.setAttribute('href', 'styledark.css');
-        themeIcon.textContent = '🌙';
+        themeIcon.textContent = '☀️';
       } else {
         themeStylesheet.setAttribute('href', 'stylelight.css');
-        themeIcon.textContent = '☀️';
+        themeIcon.textContent = '🌙';
       }
   
       themeToggleButton.addEventListener('click', () => {
-        if (themeStylesheet.getAttribute('href') === 'stylelight.css') {
-          themeStylesheet.setAttribute('href', 'styledark.css');
-          themeIcon.textContent = '🌙';
-          localStorage.setItem('theme', 'dark');
-        } else {
-          themeStylesheet.setAttribute('href', 'stylelight.css');
-          themeIcon.textContent = '☀️';
-          localStorage.setItem('theme', 'light');
-        }
+        themeIcon.classList.add('fade-out');
+        setTimeout(() => {
+          if (themeStylesheet.getAttribute('href') === 'stylelight.css') {
+            themeStylesheet.setAttribute('href', 'styledark.css');
+            themeIcon.textContent = '☀️';
+            localStorage.setItem('theme', 'dark');
+          } else {
+            themeStylesheet.setAttribute('href', 'stylelight.css');
+            themeIcon.textContent = '🌙';
+            localStorage.setItem('theme', 'light');
+          }
+          themeIcon.classList.remove('fade-out');
+          themeIcon.classList.add('fade-in');
+        }, 500); // Should match the animation duration
       });
     });
   })();
