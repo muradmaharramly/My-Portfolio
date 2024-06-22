@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: var(--back-color-dark);
     color: #ffffff;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 section {
     padding: 20px;
