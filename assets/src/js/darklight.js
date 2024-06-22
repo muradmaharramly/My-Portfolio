@@ -18,10 +18,10 @@
       // Set the stylesheet and icon according to the current theme
       if (currentTheme === 'dark') {
         themeStylesheet.setAttribute('href', 'styledark.css');
-        themeIcon.textContent = '☀️';
+        themeIcon.textContent = '🌙';
       } else {
         themeStylesheet.setAttribute('href', 'stylelight.css');
-        themeIcon.textContent = '🌙';
+        themeIcon.textContent = '☀️';
       }
   
       themeToggleButton.addEventListener('click', () => {
@@ -29,11 +29,11 @@
         setTimeout(() => {
           if (themeStylesheet.getAttribute('href') === 'stylelight.css') {
             themeStylesheet.setAttribute('href', 'styledark.css');
-            themeIcon.textContent = '☀️';
+            themeIcon.textContent = '🌙';
             localStorage.setItem('theme', 'dark');
           } else {
             themeStylesheet.setAttribute('href', 'stylelight.css');
-            themeIcon.textContent = '🌙';
+            themeIcon.textContent = '☀️';
             localStorage.setItem('theme', 'light');
           }
           themeIcon.classList.remove('fade-out');
