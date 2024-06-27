@@ -449,6 +449,11 @@ h4{
     display: inline;
     padding: 10px;  
 }
+#experience ul h4{
+    color: var(--primary-text);
+    font-weight: bold;
+    display: inline; 
+}
 #experience ul ul{
     margin-left: -40px;
 }
